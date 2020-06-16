@@ -35,3 +35,75 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+
+# node_alerts.rules
+
+## CPUOutlierDetectionOnPrd
+
+## ExtremelyHighCPU
+
+## HighCPU
+
+## HighInodeUsage
+
+## HightPhpMemory
+
+## HostDiskWillFillIn4Hours
+
+## HostEdacCorrectableErrorsDetected
+
+## HostEdacUncorrectableErrorsDetected
+
+## HostHighCpuLoad
+
+## HostMemoryUnderMemoryPressure
+
+## HostNetworkReceiveErrors
+
+##HostNetworkTransmitErrors
+
+## HostNodeOvertemperatureAlarm
+
+## HostOomKillDetected
+
+## HostOutOfDiskSpace
+
+## HostOutOfInodes
+
+## HostOutOfMemory
+
+## HostPhysicalComponentTooHot
+
+## HostRaidArrayGotInactive
+
+## HostRaidDiskFailure
+
+## HostSwapIsFillingUp
+
+## HostSystemdServiceCrashed
+
+## HostUnusualDiskReadLatency
+
+## HostUnusualDiskReadRate
+
+## HostUnusualDiskWriteLatency
+
+## HostUnusualDiskWriteRate
+
+## HostUnusualNetworkThroughputIn
+
+## HostUnusualNetworkThroughputOut
+
+## LowDiskSpace
+
+## LowDiskSpace
+
+## NoDiskSpace
+
+## ProcessNearFDLimits
+
+## high_cpu
+
+## high_load
