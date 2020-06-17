@@ -3,9 +3,11 @@ layout: default
 title:  node_alerts
 categories: alerts
 ---
-<!-- This loops through the paginated posts -->
-##   MEMORY 
 
+---
+
+## MEMORY
+---
 ###  HostOutOfMemory
       summary: Node memory is filling up (< 10% left)
       description: Node memory is filling up (< 10% left)
@@ -34,10 +36,10 @@ categories: alerts
       summary: Host unusual network throughput out
       description: Host network interfaces are probably sending too much data (> 100 MB/s)
 
-<!-- Pagination links -->
+
 ---
 ##   DISK
-
+---
 ###  HostUnusualDiskReadRate
       summary: Host unusual disk read rate
       description: Disk is probably reading too much data (> 50 MB/s)
@@ -85,7 +87,7 @@ categories: alerts
 
 ---
 ##   CPU
-
+---
 ###  HostHighCpuLoad
       summary: Host high CPU load
       description: CPU load is > 80%
@@ -117,7 +119,7 @@ categories: alerts
 
 ---
 ##   NODE
-
+---
 ###  HostPhysicalComponentTooHot
       summary: Host physical component too hot
       description: Physical hardware component too hot
@@ -144,7 +146,7 @@ categories: alerts
 
 ---
 ##   OTHER
-
+---
 ###  HostSystemdServiceCrashed
       summary: "Host SystemD service crashed
       description: "SystemD service crashed
@@ -160,3 +162,4 @@ categories: alerts
 ###  HostNetworkTransmitErrors
       summary: "Host Network Transmit Errors
       description: interface has encountered transmit errors in the last five minutes.
+---
