@@ -3,3 +3,5 @@ description: >- # this means to ignore newlines until "baseurl:"
   Alerts and it's reactions.
 
 theme: jekyll-theme-hacker
+github:
+    is_project_page: false
