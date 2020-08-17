@@ -162,4 +162,12 @@ categories: alerts
 ###  HostNetworkTransmitErrors
       summary: "Host Network Transmit Errors
       description: interface has encountered transmit errors in the last five minutes.
+
+### MYSQLGroupReplication
+[Go to]({% mysql-lres#mysqlgroupreplication %})
 ---
+
+
+
+
+
