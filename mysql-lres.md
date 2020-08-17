@@ -20,14 +20,16 @@ You can see this:
 | group_replication_applier | 1ea56238-639d-11ea-a8b1-ba94ca3fba11 | 10.135.102.241 |        3306 | ONLINE       | PRIMARY     | 8.0.19         |
 | group_replication_applier | b5300b93-b1b6-11e9-812b-cae31306b76e | 10.135.252.152 |        3306 | ONLINE       | PRIMARY     | 8.0.19         |
 +---------------------------+--------------------------------------+----------------+-------------+--------------+-------------+----------------+
-
 ```
 Если вы видите ошибку (ERROR), на текущий статус - то нужно перезапустить групповую репликацию:
-```stop GROUP_REPLICATION;```
-```start GROUP_REPLICATION;```
+```bash
+stop GROUP_REPLICATION;
+start GROUP_REPLICATION;
+```
 
 ## MYSQLREADONLY
 - Проверяем статус репликации (смотри MYSQLGroupReplication)
+
 - Далее проверяем значение переменной:
 ```bash
 show variables like '%read_only';
@@ -46,7 +48,9 @@ show variables like '%read_only';
 Если все значение OFF, значит все нормально.
 
 - Посмотреть статус по транзациям:
-```select CHANNEL_NAME,SERVICE_STATE from performance_schema.replication_connection_status;```
+```mysql
+select CHANNEL_NAME,SERVICE_STATE from performance_schema.replication_connection_status;
+```
 Должно быть:
 ```bash
 +----------------------------+---------------+
@@ -59,7 +63,9 @@ show variables like '%read_only';
 Если значения наоборот, то необходимо дождаться восстановления репликации и посмотреть все значения (*) на наличие ошибок.
 
 - Если все прерыдущие пункты показывает нормально, то можно поменять значение системной переменной:
-```SET GLOBAL read_only=0;```
+```bash
+SET GLOBAL read_only=0;
+```
 после этого так же проверяем все статусы и значение этой переменной. 
 
 - Так же посмотреть по расходу памяти:
