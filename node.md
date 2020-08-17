@@ -164,7 +164,7 @@ categories: alerts
       description: interface has encountered transmit errors in the last five minutes.
 
 ### MYSQLGroupReplication
-      [Go to]({% link mysql-lres.md %})
+[Go to]({% link mysql-lres.md %})
 
 ---
 

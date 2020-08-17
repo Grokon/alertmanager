@@ -4,7 +4,7 @@ title:  mysql_lres_alerts
 categories: alerts
 ---
 
-{{ page.path }}
+
 
 ## MYSQLGroupReplication
 - Check logs, check server status:
