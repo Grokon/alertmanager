@@ -48,7 +48,7 @@ show variables like '%read_only';
 Если все значение OFF, значит все нормально.
 
 - Посмотреть статус по транзациям:
-```mysql
+```bash
 select CHANNEL_NAME,SERVICE_STATE from performance_schema.replication_connection_status;
 ```
 Должно быть:
